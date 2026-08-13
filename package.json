@@ -1,6 +1,6 @@
 {
   "name": "@v3n0/dsh-tui",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Pi-styled single-pane terminal client for the DeepSeek Harness (dsh).",
   "license": "MIT",
   "type": "module",

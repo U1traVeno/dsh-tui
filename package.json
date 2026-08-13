@@ -1,0 +1,49 @@
+{
+  "name": "@v3n0/dsh-tui",
+  "version": "0.1.0",
+  "description": "A Pi-styled single-pane terminal client for the DeepSeek Harness (dsh).",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./startup": "./lib/startup.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "tui",
+    "terminal",
+    "cli",
+    "agent"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/U1traVeno/dsh-tui.git"
+  },
+  "engines": {
+    "node": "^22.19 || >=24"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/schemastery": "*",
+    "@deepseek-ai/dsh-agent": "*",
+    "@deepseek-ai/dsh-cmdline": "*",
+    "@deepseek-ai/dsh-llm": "*",
+    "@deepseek-ai/dsh-session": "*",
+    "commander": "*"
+  }
+}
